@@ -28,7 +28,7 @@ My research mainly focuses on **Deep Learning** and **Artificial Intelligence**,
 ---
 
 ### 📑 Research & Publications
-- 📝 *EPM–DCNN: Earthquake prediction models using deep convolutional neural networks* — Conference/Journal, 2023 [[PDF](https://pubs.geoscienceworld.org/ssa/bssa/article-abstract/112/6/2933/618527/EPM-DCNN-Earthquake-Prediction-Models-Using-Deep)] [[Code](https://github.com/MingJ-Zhang/EPM-DCNN)]  
+- 📝 *EPM–DCNN: Earthquake prediction models using deep convolutional neural networks* — Journal, 2023 [[PDF](https://pubs.geoscienceworld.org/ssa/bssa/article-abstract/112/6/2933/618527/EPM-DCNN-Earthquake-Prediction-Models-Using-Deep)] [[Code](https://github.com/MingJ-Zhang/EPM-DCNN)]  
 
 ---
 
