@@ -23,7 +23,7 @@ My research focuses on **deep learning**, **computer vision**, and **time series
   <div class="tl-content">
     <div class="tl-header">
       <span class="tl-badge edu">Ph.D.</span>
-      <span class="tl-date">2025 – Present</span>
+      <span class="tl-date">2025.09 – Present</span>
     </div>
     <div class="tl-title">Beijing University of Technology</div>
     <div class="tl-sub">Faculty of Information Science & Technology</div>
@@ -51,7 +51,7 @@ My research focuses on **deep learning**, **computer vision**, and **time series
   <div class="tl-content">
     <div class="tl-header">
       <span class="tl-badge work">Engineer</span>
-      <span class="tl-date">2023 – 2025</span>
+      <span class="tl-date">2023.07 – 2025.08</span>
     </div>
     <div class="tl-title">China E-Port Data Center</div>
     <div class="tl-desc">Data engineering & system development for national e-port services</div>
@@ -63,7 +63,7 @@ My research focuses on **deep learning**, **computer vision**, and **time series
   <div class="tl-content">
     <div class="tl-header">
       <span class="tl-badge edu">M.Sc.</span>
-      <span class="tl-date">2020 – 2023</span>
+      <span class="tl-date">2020.09 – 2023.06</span>
     </div>
     <div class="tl-title">Institute of Disaster Prevention</div>
     <div class="tl-desc">Earthquake prediction, deep learning, CNN-based seismic analysis</div>
@@ -75,7 +75,7 @@ My research focuses on **deep learning**, **computer vision**, and **time series
   <div class="tl-content">
     <div class="tl-header">
       <span class="tl-badge edu">B.Sc.</span>
-      <span class="tl-date">2016 – 2020</span>
+      <span class="tl-date">2016.09 – 2020.06</span>
     </div>
     <div class="tl-title">Hebei University of Science & Technology</div>
     <div class="tl-desc">Computer science fundamentals, software engineering</div>
