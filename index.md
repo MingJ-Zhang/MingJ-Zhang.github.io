@@ -2,47 +2,200 @@
 layout: homepage
 ---
 
-## Hi there 👋
+<div class="section-card" markdown="1">
 
-I am a Ph.D. student at **Beijing University of Technology (BJUT)** 🎓.  
-My research mainly focuses on **Deep Learning** and **Artificial Intelligence**, especially in the following areas:
+## 👋 About Me
 
-- 🖼️ **Image Enhancement & Restoration** (denoising, low-light enhancement, super-resolution)  
-- 📉 **Time Series Analysis & Forecasting** (deep learning-based methods for complex temporal patterns)  
-- 🤖 **General AI Techniques** (representation learning, generative models, multimodal learning)  
+I am a Ph.D. candidate at **Beijing University of Technology (BJUT)** — Faculty of Information Science and Technology, affiliated with the **Beijing Artificial Intelligence Institute** and **Beijing Smart Environment Lab**. 
 
----
+My research focuses on **deep learning**, **computer vision**, and **time series analysis**, with a particular interest in image enhancement, generative models, and real-world AI applications. Currently, I also work as a **Data Infra Engineer** at [Shengshu Technology (Vidu)](https://www.vidu.studio/), building scalable data infrastructure for large-scale generative AI.
 
-### 🔭 Current Research
-- Exploring frequency-domain and spatial-domain hybrid methods for image enhancement  
-- Developing robust models for noisy and corrupted image restoration  
-- Studying deep architectures for time series forecasting and anomaly detection  
+</div>
 
----
+<div class="section-card" markdown="1">
 
-### 🌱 About Me
-- 💡 Passionate about solving real-world problems with AI  
-- 📚 Enthusiastic about academic research and open-source contributions  
-- 🏫 Currently working on projects related to **image quality improvement** and **long-term sequence modeling**  
+## 🎓 Education & Experience
 
----
+<div class="timeline">
 
-### 📑 Research & Publications
-- 📝 *EPM–DCNN: Earthquake prediction models using deep convolutional neural networks* — Journal, 2023 [[PDF](https://pubs.geoscienceworld.org/ssa/bssa/article-abstract/112/6/2933/618527/EPM-DCNN-Earthquake-Prediction-Models-Using-Deep)] [[Code](https://github.com/MingJ-Zhang/EPM-DCNN)]  
+<div class="tl-item edu">
+  <div class="tl-dot"><i class="fas fa-graduation-cap"></i></div>
+  <div class="tl-content">
+    <div class="tl-header">
+      <span class="tl-badge edu">Ph.D.</span>
+      <span class="tl-date">2025 – Present</span>
+    </div>
+    <div class="tl-title">Beijing University of Technology</div>
+    <div class="tl-sub">Faculty of Information Science & Technology</div>
+    <div class="tl-sub">Beijing Artificial Intelligence Institute</div>
+    <div class="tl-sub">Beijing Smart Environment Lab</div>
+    <div class="tl-desc">Deep learning, image enhancement, time series forecasting</div>
+  </div>
+</div>
 
----
+<div class="tl-item work">
+  <div class="tl-dot"><i class="fas fa-briefcase"></i></div>
+  <div class="tl-content">
+    <div class="tl-header">
+      <span class="tl-badge work">Industry</span>
+      <span class="tl-date">2026.03 – Present</span>
+    </div>
+    <div class="tl-title">Shengshu Technology (Vidu)</div>
+    <div class="tl-sub">Data Infra Engineer</div>
+    <div class="tl-desc">Building large-scale data pipelines for generative video models</div>
+  </div>
+</div>
 
-### 🛠️ Selected Projects  
+<div class="tl-item work">
+  <div class="tl-dot"><i class="fas fa-building"></i></div>
+  <div class="tl-content">
+    <div class="tl-header">
+      <span class="tl-badge work">Engineer</span>
+      <span class="tl-date">2023 – 2025</span>
+    </div>
+    <div class="tl-title">China E-Port Data Center</div>
+    <div class="tl-desc">Data engineering & system development for national e-port services</div>
+  </div>
+</div>
 
----
+<div class="tl-item edu">
+  <div class="tl-dot"><i class="fas fa-graduation-cap"></i></div>
+  <div class="tl-content">
+    <div class="tl-header">
+      <span class="tl-badge edu">M.Sc.</span>
+      <span class="tl-date">2020 – 2023</span>
+    </div>
+    <div class="tl-title">Institute of Disaster Prevention</div>
+    <div class="tl-desc">Earthquake prediction, deep learning, CNN-based seismic analysis</div>
+  </div>
+</div>
 
-### 📫 How to reach me
-- GitHub: [MingJ-Zhang](https://github.com/MingJ-Zhang)  
-- Email: *mingjzhang8@gmail.com*  
+<div class="tl-item edu">
+  <div class="tl-dot"><i class="fas fa-graduation-cap"></i></div>
+  <div class="tl-content">
+    <div class="tl-header">
+      <span class="tl-badge edu">B.Sc.</span>
+      <span class="tl-date">2016 – 2020</span>
+    </div>
+    <div class="tl-title">Hebei University of Science & Technology</div>
+    <div class="tl-desc">Computer science fundamentals, software engineering</div>
+  </div>
+</div>
 
----
+</div>
 
-⭐️ *Feel free to check out my repositories and connect with me if you share similar research interests!*
+</div>
 
+<div class="section-card" markdown="1">
 
+## 🔬 Research Interests
 
+<div class="interests-grid">
+<div class="interest-item">
+  <i class="fas fa-image"></i>
+  <span>Image Enhancement &amp; Restoration</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-chart-line"></i>
+  <span>Time Series Analysis &amp; Forecasting</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-brain"></i>
+  <span>Representation Learning</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-wand-magic-sparkles"></i>
+  <span>Generative AI &amp; Diffusion Models</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-database"></i>
+  <span>Data Infrastructure for AI</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-microscope"></i>
+  <span>Seismic Signal Analysis</span>
+</div>
+</div>
+
+</div>
+
+<div class="section-card" markdown="1">
+
+## 📰 News
+
+<div class="news-list">
+
+<div class="news-item">
+  <span class="news-date">2026.03</span>
+  <span class="news-text">Joined <strong>Shengshu Technology (Vidu)</strong> as Data Infra Engineer</span>
+</div>
+
+<div class="news-item">
+  <span class="news-date">2025</span>
+  <span class="news-text">Started Ph.D. at <strong>Beijing University of Technology</strong></span>
+</div>
+
+<div class="news-item">
+  <span class="news-date">2023</span>
+  <span class="news-text">Published <strong>EPM–DCNN</strong> in <em>BSSA</em> — Earthquake prediction with deep CNNs</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="section-card" markdown="1">
+
+## 📄 Publications
+
+{% include publications.md %}
+
+</div>
+
+<div class="section-card" markdown="1">
+
+## 🏆 Honors &amp; Awards
+
+<div class="honor-list">
+
+<div class="honor-item">
+  <i class="fas fa-trophy"></i>
+  <div>
+    <strong>Ph.D. Research Fellowship</strong>
+    <span>Beijing University of Technology, 2025 – Present</span>
+  </div>
+</div>
+
+<div class="honor-item">
+  <i class="fas fa-medal"></i>
+  <div>
+    <strong>Outstanding Graduate Thesis</strong>
+    <span>Institute of Disaster Prevention, 2023</span>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<div class="section-card" markdown="1">
+
+## 📬 Contact
+
+<div class="contact-links">
+
+<a href="mailto:zhangmingjie@emails.bjut.edu.cn" class="contact-link">
+  <i class="fas fa-envelope"></i> zhangmingjie@emails.bjut.edu.cn
+</a>
+
+<a href="https://github.com/MingJ-Zhang" class="contact-link" target="_blank" rel="noopener">
+  <i class="fab fa-github"></i> GitHub
+</a>
+
+<a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=ljLs96MAAAAJ" class="contact-link" target="_blank" rel="noopener">
+  <i class="ai ai-google-scholar"></i> Google Scholar
+</a>
+
+</div>
+
+</div>

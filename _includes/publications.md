@@ -1,51 +1,45 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
-
-<div class="publications">
-<ol class="bibliography">
+<ol class="pub-list">
 
 {% for link in site.data.publications.main %}
 
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% if link.conference_short %} 
-    <abbr class="badge">{{ link.conference_short }}</abbr>
-    {% endif %}
-    {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors }}</div>
-      <div class="periodical"><em>{{ link.conference }}</em>
-      </div>
-    <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
+<li class="pub-entry">
+  <div class="pub-card">
+    {% if link.image %}
+    <div class="pub-img">
+      <img src="{{ link.image }}" alt="teaser" class="pub-teaser">
+      {% if link.conference_short %}
+      <span class="pub-venue">{{ link.conference_short }}</span>
       {% endif %}
     </div>
+    {% endif %}
+    <div class="pub-body">
+      <div class="pub-title">
+        <i class="fas fa-file-lines"></i>
+        <a href="{{ link.pdf }}" target="_blank" rel="noopener">{{ link.title }}</a>
+      </div>
+      <div class="pub-authors"><i class="fas fa-users"></i> {{ link.authors }}</div>
+      <div class="pub-conf"><i class="fas fa-bookmark"></i> {{ link.conference }}</div>
+      <div class="pub-links">
+        {% if link.pdf %}
+        <a href="{{ link.pdf }}" class="pub-btn pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> PDF</a>
+        {% endif %}
+        {% if link.code %}
+        <a href="{{ link.code }}" class="pub-btn code" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a>
+        {% endif %}
+        {% if link.page %}
+        <a href="{{ link.page }}" class="pub-btn web" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project</a>
+        {% endif %}
+        {% if link.bibtex %}
+        <a href="{{ link.bibtex }}" class="pub-btn bib" target="_blank" rel="noopener"><i class="fas fa-quote-right"></i> BibTeX</a>
+        {% endif %}
+        {% if link.notes %}
+        <span class="pub-note"><i class="fas fa-star"></i> {{ link.notes }}</span>
+        {% endif %}
+      </div>
+    </div>
   </div>
-</div>
 </li>
-<br>
 
 {% endfor %}
 
 </ol>
-</div>
