@@ -8,7 +8,7 @@ layout: homepage
 
 I am a Ph.D. candidate at **Beijing University of Technology (BJUT)** — Faculty of Information Science and Technology, affiliated with the **Beijing Artificial Intelligence Institute** and **Beijing Smart Environment Lab**. 
 
-My research focuses on **deep learning**, **computer vision**, and **time series analysis**, with a particular interest in image enhancement, generative models, and real-world AI applications. Currently, I also work as a **Data Infra Engineer** at [Shengshu Technology (Vidu)](https://www.vidu.studio/), building scalable data infrastructure for large-scale generative AI.
+My research focuses on **deep learning**, **computer vision**, and **time series analysis**, with a particular interest in image enhancement, generative models, and real-world AI applications.
 
 </div>
 
@@ -38,9 +38,9 @@ My research focuses on **deep learning**, **computer vision**, and **time series
   <div class="tl-content">
     <div class="tl-header">
       <span class="tl-badge work">Industry</span>
-      <span class="tl-date">2026.03 – Present</span>
+      <span class="tl-date">2026.04 – 2026.10</span>
     </div>
-    <div class="tl-title">Shengshu Technology (Vidu)</div>
+    <div class="tl-title"><a href="https://www.vidu.studio/" target="_blank" rel="noopener">Shengshu Technology (Vidu)</a></div>
     <div class="tl-sub">Data Infra Engineer</div>
     <div class="tl-desc">Building large-scale data pipelines for generative video models</div>
   </div>
@@ -53,7 +53,7 @@ My research focuses on **deep learning**, **computer vision**, and **time series
       <span class="tl-badge work">Engineer</span>
       <span class="tl-date">2023.07 – 2025.08</span>
     </div>
-    <div class="tl-title">China E-Port Data Center</div>
+    <div class="tl-title"><a href="https://www.chinaport.gov.cn" target="_blank" rel="noopener">China E-Port Data Center</a></div>
     <div class="tl-desc">Data engineering & system development for national e-port services</div>
   </div>
 </div>
@@ -126,8 +126,8 @@ My research focuses on **deep learning**, **computer vision**, and **time series
 <div class="news-list">
 
 <div class="news-item">
-  <span class="news-date">2026.03</span>
-  <span class="news-text">Joined <strong>Shengshu Technology (Vidu)</strong> as Data Infra Engineer</span>
+  <span class="news-date">2026.04</span>
+  <span class="news-text">Joined <strong>Shengshu Technology (Vidu)</strong> as Data Infra Engineer (Internship)</span>
 </div>
 
 <div class="news-item">
