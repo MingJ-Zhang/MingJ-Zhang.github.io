@@ -1,9 +1,8 @@
 main:
 
   - title: "EPM–DCNN: Earthquake Prediction Models Using Deep Convolutional Neural Networks"
-    authors: <strong>Mingjie Zhang</strong>, et al.
+    authors: Weifeng Shan, <strong>Mingjie Zhang</strong>, Maofa Wang, Huiling Chen, Ruilei Zhang, Guangze Yang, Yixiang Tang, Yuntian Teng, Jun Chen
     conference_short: BSSA
-    conference: Bulletin of the Seismological Society of America <strong>(BSSA)</strong>, 2023.
-    pdf: https://pubs.geoscienceworld.org/ssa/bssa/article-abstract/112/6/2933/618527/EPM-DCNN-Earthquake-Prediction-Models-Using-Deep
+    conference: Bulletin of the Seismological Society of America <strong>(BSSA)</strong>, Vol. 112, No. 6, pp. 2933–2945, 2022.
+    pdf: https://doi.org/10.1785/0120220058
     code: https://github.com/MingJ-Zhang/EPM-DCNN
-    image: ./assets/img/teaser_example.png

@@ -65,7 +65,7 @@ My research focuses on **deep learning**, **computer vision**, and **time series
       <span class="tl-badge edu">M.Sc.</span>
       <span class="tl-date">2020.09 – 2023.06</span>
     </div>
-    <div class="tl-title">Institute of Disaster Prevention</div>
+    <div class="tl-title">University of Emergency Management</div>
     <div class="tl-desc">Earthquake prediction, deep learning, CNN-based seismic analysis</div>
   </div>
 </div>
@@ -170,7 +170,7 @@ My research focuses on **deep learning**, **computer vision**, and **time series
   <i class="fas fa-medal"></i>
   <div>
     <strong>Outstanding Graduate Thesis</strong>
-    <span>Institute of Disaster Prevention, 2023</span>
+    <span>University of Emergency Management, 2023</span>
   </div>
 </div>
 

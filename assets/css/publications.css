@@ -54,3 +54,48 @@
     max-width: 270px;
     object-fit: cover;
 }
+
+/* Override pub-title to use block layout so long text wraps naturally */
+.pub-title {
+    display: block !important;
+}
+
+.pub-title i {
+    margin-right: 5px;
+}
+
+.pub-title a {
+    display: inline;
+}
+
+/* Venue badge inline */
+.pub-venue-inline {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    border-radius: 4px;
+    background: linear-gradient(135deg, var(--blue-dark), var(--cyan));
+    color: #fff;
+    letter-spacing: 0.4px;
+    vertical-align: middle;
+}
+
+/* Override pub-authors to use block layout */
+.pub-authors {
+    display: block !important;
+}
+
+.pub-authors i {
+    margin-right: 4px;
+}
+
+/* Override pub-conf to use block layout */
+.pub-conf {
+    display: block !important;
+}
+
+.pub-conf i {
+    margin-right: 4px;
+}
