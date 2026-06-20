@@ -1,8 +1,16 @@
 main:
 
+  - title: "Block-ASNIC: Adaptive Object-Based Mapping for Fine-Scale Alpine Wetlands"
+    authors: Yongxu Zhou, Yaxin Chen, Fei Zhu, Kai Chen, <strong>Mingjie Zhang</strong>, Shu Jin
+    conference_short: IEEE TGRS
+    conference: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>, 2026.
+    pdf: https://doi.org/10.1109/TGRS.2026.3705091
+    teaser: /assets/img/block_asnic_fig2_thumb.png
+
   - title: "EPM–DCNN: Earthquake Prediction Models Using Deep Convolutional Neural Networks"
     authors: Weifeng Shan, <strong>Mingjie Zhang</strong>, Maofa Wang, Huiling Chen, Ruilei Zhang, Guangze Yang, Yixiang Tang, Yuntian Teng, Jun Chen
     conference_short: BSSA
     conference: Bulletin of the Seismological Society of America <strong>(BSSA)</strong>, Vol. 112, No. 6, pp. 2933–2945, 2022.
     pdf: https://doi.org/10.1785/0120220058
     code: https://github.com/MingJ-Zhang/EPM-DCNN
+    teaser: /assets/img/epm_dcnn_fig2_thumb.png

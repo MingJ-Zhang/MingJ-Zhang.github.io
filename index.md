@@ -6,7 +6,7 @@ layout: homepage
 
 ## 👋 About Me
 
-I am a Ph.D. candidate at **Beijing University of Technology (BJUT)** — Faculty of Information Science and Technology, affiliated with the **Beijing Artificial Intelligence Institute** and **Beijing Smart Environment Lab**. 
+I am a Ph.D. student at **Beijing University of Technology (BJUT)** — Faculty of Information Science and Technology, affiliated with the **Beijing Artificial Intelligence Institute** and **Beijing Smart Environment Lab**. 
 
 My research focuses on **deep learning**, **computer vision**, and **time series analysis**, with a particular interest in image enhancement, generative models, and real-world AI applications.
 

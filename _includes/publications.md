@@ -2,6 +2,7 @@
 {% for link in site.data.publications.main %}
 <li class="pub-entry">
   <div class="pub-card">
+    {% if link.teaser %}<div class="pub-img"><img src="{{ link.teaser }}" alt="teaser" class="pub-teaser" loading="lazy"></div>{% endif %}
     <div class="pub-body">
       <div class="pub-title">
         <i class="fas fa-file-lines"></i>

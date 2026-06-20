@@ -213,7 +213,21 @@ section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; 
   margin-bottom: 24px;
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
-  transition: box-shadow var(--transition), border-color var(--transition);
+  transition: box-shadow var(--transition), border-color var(--transition), opacity .6s ease, transform .6s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.section-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 .section-card:hover {
   box-shadow: var(--shadow-md);
@@ -611,6 +625,29 @@ img { max-width: 100%; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-light); }
+
+/* ===== Custom Cursor ===== */
+.cursor-dot {
+  position: fixed;
+  top: 0; left: 0;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity .15s ease;
+}
+.cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid var(--text-light);
+  pointer-events: none;
+  z-index: 9998;
+  transition: width .2s ease, height .2s ease, border-color .2s ease, opacity .15s ease;
+  opacity: .7;
+}
 
 /* ===== Responsive ===== */
 @media screen and (max-width: 1060px) {
