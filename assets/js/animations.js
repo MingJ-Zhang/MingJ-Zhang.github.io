@@ -42,7 +42,7 @@
   });
 
   const clickables = document.querySelectorAll(
-    'a, button, .pub-btn, .contact-link, .social-icons a, .interest-item, .honor-item, .image.avatar img'
+    'a, button, .pub-btn, .social-icons a, .interest-item, .image.avatar img'
   );
   clickables.forEach((el) => {
     el.addEventListener('mouseenter', () => { hover = true; });

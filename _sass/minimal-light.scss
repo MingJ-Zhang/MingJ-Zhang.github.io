@@ -70,9 +70,13 @@
 
 /* ===== Base ===== */
 body {
-  background: linear-gradient(135deg, #f0f4ff 0%, #f8fafc 30%, #ecfeff 100%);
+  background:
+    radial-gradient(circle, rgba(59,130,246,.05) 1px, transparent 1px),
+    linear-gradient(135deg, #f0f4ff 0%, #f8fafc 30%, #ecfeff 100%);
+  background-size: 26px 26px, 100% 100%;
+  background-position: -13px -13px, 0 0;
   padding: 0;
-  font: 16px/1.7 "Crimson Pro", "Georgia", serif;
+  font: 16.5px/1.75 "Crimson Pro", "Georgia", serif;
   color: var(--text);
   font-weight: 400;
   margin: 0;
@@ -80,7 +84,12 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  body { background: linear-gradient(135deg, #0b1120 0%, #0f172a 50%, #0a1628 100%); }
+  body { background:
+    radial-gradient(circle, rgba(96,165,250,.04) 1px, transparent 1px),
+    linear-gradient(135deg, #0b1120 0%, #0f172a 50%, #0a1628 100%);
+    background-size: 26px 26px, 100% 100%;
+    background-position: -13px -13px, 0 0;
+  }
 }
 
 .wrapper { width: 1020px; margin: 0 auto; }
@@ -97,6 +106,7 @@ h1 { font-size: 26px; }
 
 h2 {
   font-size: 22px;
+  font-weight: 700;
   margin: 2px 0 20px;
   padding-bottom: 10px;
   border-bottom: 2px solid #f1f5f9;
@@ -110,9 +120,9 @@ h2::after {
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 48px;
+  width: 56px;
   height: 3px;
-  background: linear-gradient(135deg, var(--blue), var(--cyan), var(--emerald));
+  background: linear-gradient(90deg, var(--blue), var(--cyan), var(--emerald));
   border-radius: 3px;
 }
 @media (prefers-color-scheme: dark) {
@@ -175,11 +185,19 @@ email {
   word-break: break-all;
 }
 
+.sidebar-divider {
+  width: 48px;
+  height: 2px;
+  margin: 18px auto 18px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  border-radius: 2px;
+}
+
 .social-icons {
-  margin-top: 18px;
+  margin-top: 0;
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
 }
 .social-icons a {
   display: inline-flex;
@@ -205,6 +223,25 @@ email {
 /* ===== Main Content ===== */
 section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; }
 
+/* ===== Hero Tagline ===== */
+.hero-tagline {
+  font-family: "Crimson Pro", "Georgia", serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 26px;
+  padding: 0 4px;
+  letter-spacing: -.01em;
+}
+.hero-gradient {
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--blue-dark), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* ===== Section Cards ===== */
 .section-card {
   background: var(--bg-card);
@@ -213,10 +250,22 @@ section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; 
   margin-bottom: 24px;
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
+  position: relative;
   transition: box-shadow var(--transition), border-color var(--transition), opacity .6s ease, transform .6s ease;
   opacity: 0;
   transform: translateY(30px);
 }
+.section-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 20px; right: 20px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--blue), var(--cyan), var(--emerald), transparent);
+  border-radius: 2px;
+  opacity: .45;
+  transition: opacity var(--transition);
+}
+.section-card:hover::before { opacity: .8; }
 .section-card.visible {
   opacity: 1;
   transform: translateY(0);
@@ -346,6 +395,7 @@ section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; 
   background: var(--bg);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
+  border-left: 3px solid transparent;
   font-size: .92rem;
   font-weight: 500;
   transition: all var(--transition);
@@ -356,6 +406,12 @@ section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; 
   text-align: center;
   transition: transform var(--transition);
 }
+.interest-item:nth-child(1) { border-left-color: var(--blue); }
+.interest-item:nth-child(2) { border-left-color: var(--cyan); }
+.interest-item:nth-child(3) { border-left-color: var(--violet); }
+.interest-item:nth-child(4) { border-left-color: var(--rose); }
+.interest-item:nth-child(5) { border-left-color: var(--emerald); }
+.interest-item:nth-child(6) { border-left-color: var(--amber); }
 .interest-item:nth-child(1) i { color: var(--blue); }
 .interest-item:nth-child(2) i { color: var(--cyan); }
 .interest-item:nth-child(3) i { color: var(--violet); }
@@ -369,30 +425,6 @@ section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; 
   box-shadow: var(--shadow-md);
 }
 .interest-item:hover i { transform: scale(1.15); }
-
-/* ===== News ===== */
-.news-list { display: flex; flex-direction: column; gap: 6px; }
-.news-item {
-  display: flex;
-  align-items: baseline;
-  gap: 14px;
-  padding: 10px 12px;
-  border-radius: var(--radius-sm);
-  transition: background var(--transition);
-}
-.news-item:hover { background: var(--bg); }
-.news-date {
-  font-size: .8rem;
-  font-weight: 700;
-  color: #fff;
-  background: linear-gradient(135deg, var(--blue), var(--cyan));
-  padding: 3px 12px;
-  border-radius: 20px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  letter-spacing: .2px;
-}
-.news-text { font-size: .95rem; color: var(--text); line-height: 1.4; }
 
 /* ===== Publications ===== */
 .pub-list {
@@ -411,11 +443,13 @@ section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; 
   padding: 16px;
   border-radius: var(--radius-sm);
   border: 1px solid transparent;
+  border-left: 3px solid transparent;
   transition: all var(--transition);
 }
 .pub-card:hover {
   background: var(--bg);
   border-color: var(--border);
+  border-left-color: var(--blue);
   box-shadow: var(--shadow-sm);
 }
 .pub-entry + .pub-entry {
@@ -536,65 +570,6 @@ section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; 
 .publications ol.bibliography { list-style: none; padding: 0; margin: 0; }
 .pub-row { display: flex; gap: 18px; align-items: flex-start; }
 
-/* ===== Honors ===== */
-.honor-list { display: flex; flex-direction: column; gap: 10px; }
-.honor-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 14px 16px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
-  transition: all var(--transition);
-}
-.honor-item:hover {
-  background: var(--amber-light);
-  border-color: var(--amber);
-}
-.honor-item i {
-  font-size: 1.2rem;
-  margin-top: 2px;
-}
-.honor-item:nth-child(1) i { color: #f59e0b; }
-.honor-item:nth-child(2) i { color: #94a3b8; }
-
-.honor-item div { flex: 1; }
-.honor-item strong { display: block; margin-bottom: 2px; }
-.honor-item span { font-size: .85rem; color: var(--text-light); }
-
-/* ===== Contact ===== */
-.contact-links { display: flex; flex-wrap: wrap; gap: 10px; }
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 11px 20px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 30px;
-  font-size: .9rem;
-  font-weight: 500;
-  color: var(--text);
-  transition: all var(--transition);
-}
-.contact-link:nth-child(1) i { color: #ea4335; }
-.contact-link:nth-child(2) i { color: #333; }
-.contact-link:nth-child(3) i { color: var(--blue); }
-@media (prefers-color-scheme: dark) {
-  .contact-link:nth-child(2) i { color: #f0f6fc; }
-}
-
-.contact-link:hover {
-  color: #fff !important;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: transparent;
-}
-.contact-link:nth-child(1):hover { background: #ea4335; }
-.contact-link:nth-child(2):hover { background: #333; }
-.contact-link:nth-child(3):hover { background: var(--blue); }
-.contact-link:hover i { color: #fff !important; }
-
 /* ===== Footer ===== */
 footer {
   width: 280px;
@@ -672,8 +647,6 @@ img { max-width: 100%; }
   .wrapper { margin: 0; }
   .section-card { padding: 18px 15px; }
   .interests-grid { grid-template-columns: 1fr; }
-  .contact-links { flex-direction: column; }
-  .news-item { flex-direction: column; gap: 4px; }
   .tl-header { flex-direction: column; align-items: flex-start; gap: 4px; }
   h1 { font-size: 22px; }
   h2 { font-size: 19px; }

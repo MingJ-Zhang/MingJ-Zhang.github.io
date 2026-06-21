@@ -2,6 +2,10 @@
 layout: homepage
 ---
 
+<div class="hero-tagline">
+  <span class="hero-gradient">Exploring the frontier</span> of visual intelligence — from image restoration to generative understanding.
+</div>
+
 <div class="section-card" markdown="1">
 
 ## 👋 About Me
@@ -9,6 +13,33 @@ layout: homepage
 I am a Ph.D. student at **Beijing University of Technology (BJUT)** — Faculty of Information Science and Technology, affiliated with the **Beijing Artificial Intelligence Institute** and **Beijing Smart Environment Lab**. 
 
 My research focuses on **deep learning**, **computer vision**, and **time series analysis**, with a particular interest in image enhancement, generative models, and real-world AI applications.
+
+<div class="interests-grid">
+<div class="interest-item">
+  <i class="fas fa-image"></i>
+  <span>Image Enhancement &amp; Restoration</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-chart-line"></i>
+  <span>Time Series Analysis &amp; Forecasting</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-brain"></i>
+  <span>Representation Learning</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-wand-magic-sparkles"></i>
+  <span>Generative AI &amp; Diffusion Models</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-database"></i>
+  <span>Data Infrastructure for AI</span>
+</div>
+<div class="interest-item">
+  <i class="fas fa-microscope"></i>
+  <span>Seismic Signal Analysis</span>
+</div>
+</div>
 
 </div>
 
@@ -88,114 +119,8 @@ My research focuses on **deep learning**, **computer vision**, and **time series
 
 <div class="section-card" markdown="1">
 
-## 🔬 Research Interests
-
-<div class="interests-grid">
-<div class="interest-item">
-  <i class="fas fa-image"></i>
-  <span>Image Enhancement &amp; Restoration</span>
-</div>
-<div class="interest-item">
-  <i class="fas fa-chart-line"></i>
-  <span>Time Series Analysis &amp; Forecasting</span>
-</div>
-<div class="interest-item">
-  <i class="fas fa-brain"></i>
-  <span>Representation Learning</span>
-</div>
-<div class="interest-item">
-  <i class="fas fa-wand-magic-sparkles"></i>
-  <span>Generative AI &amp; Diffusion Models</span>
-</div>
-<div class="interest-item">
-  <i class="fas fa-database"></i>
-  <span>Data Infrastructure for AI</span>
-</div>
-<div class="interest-item">
-  <i class="fas fa-microscope"></i>
-  <span>Seismic Signal Analysis</span>
-</div>
-</div>
-
-</div>
-
-<div class="section-card" markdown="1">
-
-## 📰 News
-
-<div class="news-list">
-
-<div class="news-item">
-  <span class="news-date">2026.04</span>
-  <span class="news-text">Joined <strong>Shengshu Technology (Vidu)</strong> as Data Infra Engineer (Internship)</span>
-</div>
-
-<div class="news-item">
-  <span class="news-date">2025</span>
-  <span class="news-text">Started Ph.D. at <strong>Beijing University of Technology</strong></span>
-</div>
-
-<div class="news-item">
-  <span class="news-date">2023</span>
-  <span class="news-text">Published <strong>EPM–DCNN</strong> in <em>BSSA</em> — Earthquake prediction with deep CNNs</span>
-</div>
-
-</div>
-
-</div>
-
-<div class="section-card" markdown="1">
-
 ## 📄 Publications
 
 {% include publications.md %}
-
-</div>
-
-<div class="section-card" markdown="1">
-
-## 🏆 Honors &amp; Awards
-
-<div class="honor-list">
-
-<div class="honor-item">
-  <i class="fas fa-trophy"></i>
-  <div>
-    <strong>Ph.D. Research Fellowship</strong>
-    <span>Beijing University of Technology, 2025 – Present</span>
-  </div>
-</div>
-
-<div class="honor-item">
-  <i class="fas fa-medal"></i>
-  <div>
-    <strong>Outstanding Graduate Thesis</strong>
-    <span>University of Emergency Management, 2023</span>
-  </div>
-</div>
-
-</div>
-
-</div>
-
-<div class="section-card" markdown="1">
-
-## 📬 Contact
-
-<div class="contact-links">
-
-<a href="mailto:zhangmingjie@emails.bjut.edu.cn" class="contact-link">
-  <i class="fas fa-envelope"></i> zhangmingjie@emails.bjut.edu.cn
-</a>
-
-<a href="https://github.com/MingJ-Zhang" class="contact-link" target="_blank" rel="noopener">
-  <i class="fab fa-github"></i> GitHub
-</a>
-
-<a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=ljLs96MAAAAJ" class="contact-link" target="_blank" rel="noopener">
-  <i class="ai ai-google-scholar"></i> Google Scholar
-</a>
-
-</div>
 
 </div>
