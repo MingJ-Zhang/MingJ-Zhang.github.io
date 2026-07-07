@@ -1,3 +1,70 @@
+// ===== View Mode Toggle =====
+(function () {
+  const toggle = document.getElementById('view-mode-toggle');
+  const container = document.querySelector('.tab-container');
+  if (!toggle || !container) return;
+
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      container.classList.add('tab-mode');
+      // Activate first tab
+      const firstBtn = container.querySelector('.tab-btn');
+      if (firstBtn) firstBtn.click();
+    } else {
+      container.classList.remove('tab-mode');
+      // Show all cards
+      container.querySelectorAll('.section-card').forEach((card, i) => {
+        card.style.transitionDelay = i * 0.03 + 's';
+        card.classList.add('visible');
+      });
+    }
+  });
+})();
+
+// ===== Tab Switching =====
+(function () {
+  const tabNav = document.querySelector('.tab-nav');
+  if (!tabNav) return;
+
+  const buttons = tabNav.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      if (!target) return;
+
+      // Update buttons
+      buttons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Update panels
+      panels.forEach((panel) => {
+        panel.classList.remove('active');
+        if (panel.id === 'tab-' + target) {
+          panel.classList.add('active');
+          // Reveal section cards inside the newly active panel
+          const cards = panel.querySelectorAll('.section-card');
+          cards.forEach((card, i) => {
+            card.style.transitionDelay = i * 0.05 + 's';
+            card.classList.add('visible');
+          });
+        }
+      });
+    });
+  });
+
+  // Reveal cards in the initially active panel
+  const activePanel = document.querySelector('.tab-panel.active');
+  if (activePanel) {
+    const cards = activePanel.querySelectorAll('.section-card');
+    cards.forEach((card, i) => {
+      card.style.transitionDelay = i * 0.05 + 's';
+      card.classList.add('visible');
+    });
+  }
+})();
+
 // ===== Scroll Reveal =====
 (function () {
   const cards = document.querySelectorAll('.section-card');

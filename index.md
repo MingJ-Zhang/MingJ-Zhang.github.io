@@ -3,8 +3,33 @@ layout: homepage
 ---
 
 <div class="hero-tagline">
-  <span class="hero-gradient">Exploring the frontier</span> of visual intelligence — from image restoration to generative understanding.
+  <span class="hero-gradient">Mingjie's HomePage</span>
 </div>
+
+<div class="view-toggle">
+  <span class="view-label">All</span>
+  <label class="toggle-switch">
+    <input type="checkbox" id="view-mode-toggle">
+    <span class="toggle-slider"></span>
+  </label>
+  <span class="view-label">Tabs</span>
+</div>
+
+<div class="tab-container">
+
+<div class="tab-nav">
+  <button class="tab-btn active" data-tab="about">
+    <i class="fas fa-user"></i> About
+  </button>
+  <button class="tab-btn" data-tab="education">
+    <i class="fas fa-graduation-cap"></i> Education
+  </button>
+  <button class="tab-btn" data-tab="publications">
+    <i class="fas fa-file-alt"></i> Publications
+  </button>
+</div>
+
+<div class="tab-panel active" id="tab-about">
 
 <div class="section-card" markdown="1">
 
@@ -42,6 +67,10 @@ My research focuses on **deep learning**, **computer vision**, and **time series
 </div>
 
 </div>
+
+</div>
+
+<div class="tab-panel" id="tab-education">
 
 <div class="section-card" markdown="1">
 
@@ -117,10 +146,18 @@ My research focuses on **deep learning**, **computer vision**, and **time series
 
 </div>
 
+</div>
+
+<div class="tab-panel" id="tab-publications">
+
 <div class="section-card" markdown="1">
 
 ## 📄 Publications
 
 {% include publications.md %}
+
+</div>
+
+</div>
 
 </div>

@@ -57,8 +57,40 @@ email { font-size: 13px; font-family: "SF Mono", "Ubuntu Mono", "Menlo", monospa
 section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; }
 
 /* Hero */
-.hero-tagline { font-family: "Crimson Pro", "Georgia", serif; font-size: 1.35rem; font-weight: 400; line-height: 1.5; color: var(--text); margin-bottom: 26px; padding: 0 4px; letter-spacing: -.01em; }
+.hero-tagline { font-family: "Crimson Pro", "Georgia", serif; font-size: 1.75rem; font-weight: 400; line-height: 1.4; color: var(--text); margin-bottom: 26px; padding: 0 4px; letter-spacing: -.01em; }
 .hero-gradient { font-weight: 700; background: linear-gradient(135deg, var(--blue-dark), var(--cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+/* Tab Navigation */
+.tab-container { margin-bottom: 0; }
+.tab-container:not(.tab-mode) .tab-nav { display: none; }
+.tab-container:not(.tab-mode) .tab-panel { display: block; }
+.tab-container:not(.tab-mode) .tab-panel .section-card { margin-top: 0; border-top-left-radius: var(--radius); border-top-right-radius: var(--radius); margin-bottom: 24px; }
+.tab-container:not(.tab-mode) .tab-panel .section-card::before { display: block; }
+.tab-container.tab-mode .tab-nav { display: flex; }
+.tab-container.tab-mode .tab-panel { display: none; }
+.tab-container.tab-mode .tab-panel.active { display: block; }
+
+/* View Toggle */
+.view-toggle { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-bottom: 16px; }
+.view-label { font-size: .82rem; font-weight: 600; color: var(--text-light); transition: color var(--transition); user-select: none; }
+.toggle-switch { position: relative; display: inline-block; width: 44px; height: 24px; flex-shrink: 0; }
+.toggle-switch input { opacity: 0; width: 0; height: 0; }
+.toggle-slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background: var(--border); border-radius: 24px; transition: all var(--transition); }
+.toggle-slider::before { content: ''; position: absolute; height: 18px; width: 18px; left: 3px; bottom: 3px; background: #fff; border-radius: 50%; transition: all var(--transition); box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+.toggle-switch input:checked + .toggle-slider { background: linear-gradient(135deg, var(--blue), var(--cyan)); }
+.toggle-switch input:checked + .toggle-slider::before { transform: translateX(20px); }
+.toggle-switch input:focus-visible + .toggle-slider { outline: 2px solid var(--blue); outline-offset: 2px; }
+.tab-nav { display: flex; gap: 6px; margin-bottom: 0; padding: 4px; background: var(--bg); border-radius: var(--radius); border: 1px solid var(--border); }
+.tab-btn { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 20px; font-family: "Crimson Pro", "Georgia", serif; font-size: 1rem; font-weight: 600; color: var(--text-light); background: transparent; border: none; border-radius: calc(var(--radius) - 4px); cursor: pointer; transition: all var(--transition); position: relative; }
+.tab-btn i { font-size: .95rem; transition: transform var(--transition); }
+.tab-btn:hover { color: var(--text-heading); background: var(--bg-card); }
+.tab-btn.active { color: #fff; background: linear-gradient(135deg, var(--blue), var(--cyan)); box-shadow: 0 2px 8px rgba(59, 130, 246, .3); }
+.tab-btn.active i { transform: scale(1.1); }
+.tab-panel { display: none; animation: tabFadeIn .35s ease; }
+.tab-panel.active { display: block; }
+.tab-panel .section-card { margin-top: 20px; border-top-left-radius: 0; border-top-right-radius: 0; }
+.tab-panel .section-card::before { display: none; }
+@keyframes tabFadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
 .section-card { background: var(--bg-card); border-radius: var(--radius); padding: 28px 32px; margin-bottom: 24px; box-shadow: var(--shadow); border: 1px solid var(--border); position: relative; transition: box-shadow var(--transition), border-color var(--transition); }
 .section-card::before { content: ''; position: absolute; top: 0; left: 20px; right: 20px; height: 2px; background: linear-gradient(90deg, transparent, var(--blue), var(--cyan), var(--emerald), transparent); border-radius: 2px; opacity: .45; transition: opacity var(--transition); }
@@ -164,6 +196,8 @@ img { max-width: 100%; }
   .tl-dot { width: 32px; height: 32px; font-size: .75rem; }
 }
 @media screen and (max-width: 500px) {
+  .tab-nav { flex-direction: column; gap: 2px; }
+  .tab-btn { padding: 10px 16px; font-size: .9rem; justify-content: flex-start; }
   body { padding: 10px; }
   .wrapper { margin: 0; }
   .section-card { padding: 18px 15px; }
