@@ -1,5 +1,12 @@
 main:
 
+  - title: "AoRS-Dehaze: Fading-Memory Restoration-State Scheduling for Remote Sensing Image Dehazing"
+    authors: Kai Chen, Xiangyin Zhang, <strong>Mingjie Zhang</strong>, Yongxu Zhou
+    conference_short: IEEE TGRS
+    conference: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>, 2026.
+    pdf: https://doi.org/10.1109/TGRS.2026.3756152
+    teaser: /assets/img/aors_dehaze_fig1_thumb.png
+
   - title: "Block-ASNIC: Adaptive Object-Based Mapping for Fine-Scale Alpine Wetlands"
     authors: Yongxu Zhou, Yaxin Chen, Fei Zhu, Kai Chen, <strong>Mingjie Zhang</strong>, Shu Jin
     conference_short: IEEE TGRS
