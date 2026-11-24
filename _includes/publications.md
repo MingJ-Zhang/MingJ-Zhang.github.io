@@ -11,6 +11,28 @@
       </div>
       <div class="pub-authors"><i class="fas fa-users"></i> {{ link.authors }}</div>
       <div class="pub-conf"><i class="fas fa-bookmark"></i> {{ link.conference }}</div>
+      {% if link.impact_factor or link.jcr_quartile %}
+      <div class="pub-stats">
+        {% if link.impact_factor %}
+        <span class="pub-stat stat-if" title="Journal Impact Factor{% if link.jcr_year %} · {{ link.jcr_year }} JCR{% endif %}">
+          <span class="ps-label">Impact Factor</span>
+          <span class="ps-value">{{ link.impact_factor }}</span>
+        </span>
+        {% endif %}
+        {% if link.jcr_quartile %}
+        <span class="pub-stat stat-jcr {{ link.jcr_quartile | downcase | escape }}" title="JCR Quartile{% if link.jcr_category %} · {{ link.jcr_category | escape }}{% endif %}{% if link.jcr_year %} ({{ link.jcr_year }}){% endif %}">
+          <span class="ps-label">JCR</span>
+          <span class="ps-value">{{ link.jcr_quartile }}</span>
+        </span>
+        {% endif %}
+        {% if link.jcr_rank %}
+        <span class="pub-stat stat-rank" title="JCR rank in {{ link.jcr_category | default: 'category' | escape }} ({{ link.jcr_year | default: 'JCR' }})">
+          <span class="ps-label">Rank</span>
+          <span class="ps-value">{{ link.jcr_rank }}</span>
+        </span>
+        {% endif %}
+      </div>
+      {% endif %}
       <div class="pub-links">
         {% if link.pdf %}<a href="{{ link.pdf }}" class="pub-btn pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> PDF</a>{% endif %}
         {% if link.code %}<a href="{{ link.code }}" class="pub-btn code" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a>{% endif %}

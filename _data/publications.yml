@@ -4,6 +4,11 @@ main:
     authors: Kai Chen, Xiangyin Zhang, <strong>Mingjie Zhang</strong>, Yongxu Zhou
     conference_short: IEEE TGRS
     conference: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>, 2026.
+    impact_factor: 9.4
+    jcr_quartile: Q1
+    jcr_category: Geochemistry & Geophysics
+    jcr_rank: 4/103
+    jcr_year: 2025
     pdf: https://doi.org/10.1109/TGRS.2026.3756152
     teaser: /assets/img/aors_dehaze_fig1_thumb.png
 
@@ -11,6 +16,11 @@ main:
     authors: Yongxu Zhou, Yaxin Chen, Fei Zhu, Kai Chen, <strong>Mingjie Zhang</strong>, Shu Jin
     conference_short: IEEE TGRS
     conference: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>, 2026.
+    impact_factor: 9.4
+    jcr_quartile: Q1
+    jcr_category: Geochemistry & Geophysics
+    jcr_rank: 4/103
+    jcr_year: 2025
     pdf: https://doi.org/10.1109/TGRS.2026.3705091
     teaser: /assets/img/block_asnic_fig2_thumb.png
 
@@ -18,6 +28,11 @@ main:
     authors: Weifeng Shan, <strong>Mingjie Zhang</strong>, Maofa Wang, Huiling Chen, Ruilei Zhang, Guangze Yang, Yixiang Tang, Yuntian Teng, Jun Chen
     conference_short: BSSA
     conference: Bulletin of the Seismological Society of America <strong>(BSSA)</strong>, Vol. 112, No. 6, pp. 2933–2945, 2022.
+    impact_factor: 3.1
+    jcr_quartile: Q2
+    jcr_category: Geochemistry & Geophysics
+    jcr_rank: 28/103
+    jcr_year: 2025
     pdf: https://doi.org/10.1785/0120220058
     code: https://github.com/MingJ-Zhang/EPM-DCNN
     teaser: /assets/img/epm_dcnn_fig2_thumb.png

@@ -6,6 +6,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if site.auto_dark_mode %}
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'light' && t !== 'dark') {
+            t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+    {% endif %}
     <meta name="description" content="{{ site.description }}">
     {% if site.keywords %}
     <meta name="keywords" content="{{ site.keywords }}">
@@ -27,15 +40,21 @@
     <link rel="stylesheet" href="./assets/css/font.css">
     {% endif %}
     {% if site.auto_dark_mode %}
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/publications.css">
+    <link rel="stylesheet" href="./assets/css/style.css?v={{ site.time | date: '%s' }}">
+    <link rel="stylesheet" href="./assets/css/publications.css?v={{ site.time | date: '%s' }}">
     {% else %}
-    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
-    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
+    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css?v={{ site.time | date: '%s' }}">
+    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css?v={{ site.time | date: '%s' }}">
     {% endif %}
 
   </head>
   <body>
+  {% if site.auto_dark_mode %}
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+    <i class="fas fa-moon" aria-hidden="true"></i>
+    <i class="fas fa-sun" aria-hidden="true"></i>
+  </button>
+  {% endif %}
     <div class="wrapper">
       <header>
         
@@ -113,6 +132,9 @@
         
       </footer>
     </div>
+    {% if site.auto_dark_mode %}
+    <script src="{{ "/assets/js/theme-toggle.js" | relative_url }}"></script>
+    {% endif %}
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/animations.js" | relative_url }}"></script>
     {% if site.google_analytics %}
