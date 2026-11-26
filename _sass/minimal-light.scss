@@ -128,6 +128,10 @@ $glass-noise: url("../img/glass-noise.png");
 }
 
 /* ===== Base ===== */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   background:
     radial-gradient(40rem 32rem at 60% 2%, rgba(59, 130, 246, .2), transparent 60%),
@@ -404,6 +408,7 @@ section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; 
   width: 52px;
   height: 31px;
   flex-shrink: 0;
+  touch-action: manipulation;
 }
 
 .toggle-switch input {
@@ -479,6 +484,22 @@ section { width: 680px; float: right; padding-top: 3.5em; padding-bottom: 60px; 
 .toggle-switch input:focus-visible + .toggle-slider {
   outline: 2px solid var(--blue);
   outline-offset: 3px;
+}
+
+/* Pointer/touch focus should not paint the keyboard focus ring */
+.toggle-switch input:focus:not(:focus-visible) + .toggle-slider,
+.theme-toggle:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* iOS/Android may treat a tap as focus-visible; drop the blue ring there */
+@media (hover: none) and (pointer: coarse) {
+  .theme-toggle:focus,
+  .theme-toggle:focus-visible,
+  .toggle-switch input:focus + .toggle-slider,
+  .toggle-switch input:focus-visible + .toggle-slider {
+    outline: none;
+  }
 }
 
 :root[data-theme="dark"] .toggle-slider {
@@ -1149,6 +1170,7 @@ img { max-width: 100%; }
   color: var(--text);
   font-size: .95rem;
   cursor: pointer;
+  touch-action: manipulation;
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
   @include glass-ring;
 }
