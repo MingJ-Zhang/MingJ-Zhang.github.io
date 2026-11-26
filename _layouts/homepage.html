@@ -54,6 +54,14 @@
     <i class="fas fa-moon" aria-hidden="true"></i>
     <i class="fas fa-sun" aria-hidden="true"></i>
   </button>
+  <svg class="liquid-lens-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="liquid-lens" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB" primitiveUnits="objectBoundingBox">
+        <feImage href="{{ site.data.liquid_lens.map }}" x="-0.15" y="-0.15" width="1.3" height="1.3" preserveAspectRatio="none" result="map" />
+        <feDisplacementMap in="SourceGraphic" in2="map" scale="0.6" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
   {% endif %}
     <div class="wrapper">
       <header>

@@ -9,7 +9,7 @@ layout: homepage
 <div class="view-toggle">
   <span class="view-label">All</span>
   <label class="toggle-switch">
-    <input type="checkbox" id="view-mode-toggle">
+    <input type="checkbox" id="view-mode-toggle" role="switch" aria-label="Switch between all sections and tabbed view">
     <span class="toggle-slider"></span>
   </label>
   <span class="view-label">Tabs</span>

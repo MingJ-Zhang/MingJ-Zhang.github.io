@@ -14,6 +14,21 @@
 
   apply(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
 
+  // Real backdrop refraction via SVG filter — Chromium only.
+  // Firefox reports CSS support for url() filters but renders nothing, and
+  // Safari has never shipped backdrop displacement, so gate on UA as well.
+  (function () {
+    const ua = navigator.userAgent;
+    const isChromium = /Chrome|Chromium|Edg\/|OPR\//.test(ua) && !/Firefox\//.test(ua);
+    const supportsUrlFilter =
+      window.CSS &&
+      CSS.supports &&
+      CSS.supports('backdrop-filter', 'url(#liquid-lens)');
+    if (isChromium && supportsUrlFilter) {
+      btn.classList.add('lens-on');
+    }
+  })();
+
   btn.addEventListener('click', () => {
     const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     apply(next);
