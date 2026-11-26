@@ -1,6 +1,13 @@
 _site
 .sass-cache
+
+# Local Bundler files
+Gemfile
 Gemfile.lock
+
+# Local paper PDFs
+*.pdf
+
 *.gem
 .DS_Store
 .jekyll-cache
