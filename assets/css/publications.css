@@ -130,7 +130,7 @@
     padding: 4px 10px 5px;
     background-color: rgba(var(--stat-tint), var(--stat-tint-a));
     background-image:
-        var(--glass-noise),
+        url("../img/glass-noise.png"),
         linear-gradient(135deg, rgba(255, 255, 255, var(--stat-sheen-a)) 0%, rgba(255, 255, 255, 0) 54%);
     background-size: 160px 160px, auto;
     -webkit-backdrop-filter: blur(18px) saturate(180%);
